@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Contact Form </title>
+</head>
+
+<body>
+    <!--Header section-->
+    <div>
+        <h1>Contact Us</h1>
+        <span>We are happy to hear from you!</span>
+    </div>
+
+
+    <!--Content Section-->
+    <div>
+
+        <h2>Contact Form</h2>
+
+        <form>
+
+            <!--Email input-->
+            <label for="email"> Email Address: </label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <!--Date Input-->
+            <label for="date">Preferred Contact Date:</label>
+            <input type="date" id="date" name="date">
+
+            <br><br>
+
+            <!--Range Slider-->
+            <label for="satisfaction">Satisfaction Level:</label>
+            <input type="range" id="satisfaction"
+            name="satisfaction" min="1" max="10" value="5">
+
+            <br><br>
+
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+    
+    <!--Inline Calculator-->
+    <div>
+
+        <h2>Inline Calculator</h2>
+
+        <!--First Number-->
+        <label for="num1">First Number:</label>
+        <input type="number" id="num1" name="num1"
+        oninput="calculateSum()">
+
+        <br><br>
+
+        <!--Second number-->
+        <label for="num2">Second Number:</label>
+        <input type="number" id="num2" name="num2"
+        oninput="calculateSum()">
+
+        <br><br>
+
+        <!--Output-->
+        <label>Sum:</label>
+        <output id="result">0</output>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div>
+        <h3>Contact Information</h3>
+        <p>Email: contact@gmail.com</p>
+        <p>&copy; 2026 Contact us. All rights reserved</p>
+    </div>
+
+    <!--Javascript for calculator-->
+    <script>
+
+        function calculateSum(){
+            let num1 =  Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let sum = num1 + num2;
+            document.getElementById("result").value = sum;
+        }
+    </script>
+    </body>
+    </html>
