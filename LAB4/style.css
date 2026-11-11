@@ -1,0 +1,171 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    text-decoration: underline;
+}
+
+/* Navigasi */
+nav {
+    background-color: #34495e;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+/* nav */
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #f1c40f;
+    color: #2c3e50;
+    text-decoration: overline;
+}
+
+nav ul li a:active {
+    background-color: #d4ac0d;
+}
+
+/* Main Section */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* nav link */
+.my-link:link {
+    color: #2980b9;
+    text-decoration: underline;
+}
+.my-link:visited {
+    color: #8e44ad;
+}
+.my-link:hover {
+    color: #c0392b;
+    text-decoration: line-through;
+}
+.my-link:active {
+    color: #e67e22;
+}
+
+/* Video  */
+video {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    background: #000;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* form*/
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group label, .checkbox-group label {
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.submit-btn {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-btn:hover {
+    background-color: #34495e;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a:link, footer a:visited {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

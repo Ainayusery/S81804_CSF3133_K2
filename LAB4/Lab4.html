@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4</title>
+    
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INTERNAL CSS -->
+    <style>
+        /* Header title styling */
+        header h1 {
+            text-decoration: underline overline;
+            color: #ffffff;
+        }
+
+        /* Note text styling */
+        .note-text {
+            text-decoration: line-through;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="home">
+        <h1>Lab Exercise 4</h1>
+        <p>Web Development & Design</p>
+    </header>
+
+    <!-- Navigation Bar Section -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#media">Video</a></li>
+            <li><a href="#register">Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Articles Section -->
+        <section id="articles">
+            <h2>Articles</h2>
+           <article>
+                <h3>HTML5 & CSS3 Basics</h3>
+                <p>Semantic tags help structure web pages clearly and make the code easier to understand.</p>
+                <p class="note-text">Old note: Using standard divs for everything.</p>
+            </article>
+        </section>
+
+        <!-- Video Media Section -->
+        <section id="media">
+            <h2>How to make a responsive website</h2>
+            <video controls>
+                <source src="videotiktok.mp4" type="video/mp4">
+            </video>
+            <figcaption>Figure: Sample video demonstration.</figcaption>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section id="register">
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                
+                <!-- Name Text Input -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Email Text Input -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+
+                <!-- Gender Radio Buttons -->
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+
+                <!-- Favorite Hobbies Checkboxes -->
+                <div class="form-group">
+                    <label>Favorite Hobbies:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+                        <label><input type="checkbox" name="hobby" value="coding"> Coding</label>
+                        <label><input type="checkbox" name="hobby" value="gaming"> Gaming</label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit Button</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Footer - <a href="#home">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
