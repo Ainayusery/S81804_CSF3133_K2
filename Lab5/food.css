@@ -1,0 +1,193 @@
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #FBF7F0;
+    color: #333;
+}
+
+
+/* 1. Header with Background Image */
+header {
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+
+    height: 250px;
+    padding: 80px 15px 40px;
+}
+
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    text-shadow: 1px 2px 4px #333;
+}
+
+header p {
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* 2. Horizontal Navigation Bar */
+nav {
+    background-color: #2C2C2C;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 13px;
+}
+
+/* Hover Effect */
+nav a:hover {
+    background-color: #E67E22;
+    color: white;
+}
+
+/* Active Link */
+nav a.active {
+    background-color: #E67E22;
+    color: white;
+}
+
+
+/* 3. Content Section and Text Formatting */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+/* 5. Styled Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 13px;
+    background-color: white;
+}
+
+th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 9px;
+    border: 1px solid #ddd;
+}
+
+/* Alternating Row Colours */
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+tr:nth-child(odd) {
+    background-color: #FDF0DB;
+}
+
+/* Table Hover Effect */
+tbody tr:hover {
+    background-color: #FDEBD0;
+}
+
+/* Align Prices to the Right */
+.price {
+    text-align: right;
+}
+
+
+/* 6. Footer */
+footer {
+    background-color: #EFE6D8;
+    text-align: center;
+    padding: 12px;
+    margin-top: 10px;
+    color: #333;
+}
+
+footer p {
+    text-align: center;
+    font-size: 11px;
+    margin: 0;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav li {
+        float: none;
+        display: inline-block;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    main {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 6px 4px;
+    }
+}
